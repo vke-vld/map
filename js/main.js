@@ -45,11 +45,7 @@ $('span').tooltipster({
   animation: 'fade',
   delay: 200,
   theme: 'tooltipster-punk',
-  trigger: 'custom',
-   triggerOpen: {
-        mouseenter: true,
-        touchstart: true
-    },
+  trigger: 'click',
     triggerClose: {
       mouseleave: true,
       originClick: true,
