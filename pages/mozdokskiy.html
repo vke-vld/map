@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/mozdokskiy.css">
+    <title>Map</title>
+    <link rel="stylesheet" type="text/css" href="./tooltipster-master/dist/css/tooltipster.bundle.min.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script type="text/javascript" src="./tooltipster-master/dist/js/tooltipster.bundle.min.js"></script>
+</head>
+<body>
+    <div class="filters">
+        <ul>
+
+            <li>
+                <form>
+                <input type="button" value="<" onClick='location.href="../index.html"' class="back">
+                </form>
+               <span class="bck">Вернуться на главную</span>
+            </li>
+
+
+            <li><button class="filter-button _filter-button" data-filter="All" onclick="hideSubFilter()">Все</button>Все объекты</li>
+                                
+            <li>
+                <button class="filter-button _filter-button" data-filter="Q"><img src="./../src/Q0.png" alt="">
+                </button><span class="filter-button__title">Кванториумы</span>
+            </li>
+            <li>
+                <button
+                    class="filter-button _filter-button"
+                    data-filter="GS"
+                    onclick="showSubFilter(this)"
+                    >
+                    <img src="./../src/rost1.png" alt="">
+                </button>
+                <div class="filter-button__listik">
+                </div>
+                <span class="filter-button__title">Точки роста</span>
+            </li>
+            <li>
+                        <button
+                            class="filter-button _filter-button"
+                            data-filter="DS"
+                            onclick="showSubFilter(this)"
+                        >
+                            <img src="../src/ds0.png" alt="">
+                        </button>
+                        <div class="filter-button__listik">
+                            <ul>
+                                <li><button class="_filter-button" data-filter="DS21">2021г.</button></li>
+                                <!-- <li><button class="_filter-button" data-filter="DS22">2022г.</button></li> -->
+                                <!-- <li><button class="_filter-button" data-filter="DS23">2023г.</button></li> -->
+                            </ul>
+                        </div>
+                        <span class="filter-button__title">Строительство детских садов</span>
+                    </li>
+
+
+            <li>
+                <button
+                class="filter-button _filter-button"
+                data-filter="S"
+                onclick="showSubFilter(this)"
+                >
+                    <img src="../src/sch0.png" alt="">
+                </button>
+                <div class="filter-button__listik">
+                    <ul>
+                        <li><button class="_filter-button" data-filter="S21">2021г.</button></li>
+                        <li><button class="_filter-button" data-filter="S22">2022г.</button></li>
+                        <!-- <li><button class="_filter-button" data-filter="S23">2023г.</button></li> -->
+                    </ul>
+                </div>
+                <span class="filter-button__title">Строительство новых школ</span>
+            </li>
+
+            <li>
+                <button
+                    class="filter-button _filter-button"
+                    data-filter="SR"
+                    onclick="showSubFilter(this)"
+                >
+                    <img src="../src/schrem0.png" alt="">
+                </button>
+                <div class="filter-button__listik">
+                    <ul>
+                        <!-- <li><button class="_filter-button" data-filter="SR21">2021г.</button></li> -->
+                        <li><button class="_filter-button" data-filter="SR22">2022г.</button></li>
+                        <li><button class="_filter-button" data-filter="SR23">2023г.</button></li>
+                    </ul>
+                </div>
+                <span class="filter-button__title">Ремонт школ</span>
+            </li>
+
+
+
+        </ul>
+
+
+        <div class="yt">
+            <ul class="yf">
+                <li><button class="yearfilter _filter-button" data-filter="A21">2021</button></li>
+                <li><button class="yearfilter _filter-button" data-filter="A22">2022</button></li>
+                <li><button class="yearfilter _filter-button" data-filter="A23">2023</button></li>
+            </ul>
+            <span>Фильтрация по годам</span>
+        </div>
+
+    </div>
+
+
+    <div class="main-wrapper">
+
+        <div class="main-map"><img src="./src/mozdokskiy.png"></img></div>
+   
+        <div class="markers">
+
+        <div class="quants">
+            <span class="Q marker" title="Кванториум"><img src="./../src/Q0.png" alt=""></span>
+        </div>
+
+            <div class="growschool">
+                <span class="GS marker" title="МБОУ СОШ с.Виноградное"><img src="./../src/rost1.png" alt=""></span>
+                <span class="GS marker" title="МБОУ СОШ пос.Притеречный"><img src="./../src/rost1.png" alt=""></span>
+                <span class="GS marker" title="МБОУ СОШ №2 с.Кизляр"><img src="./../src/rost1.png" alt=""></span>
+                <span class="GS marker" title="МБОУ СОШ ст.Терской"><img src="./../src/rost1.png" alt=""></span>
+                <span class="GS marker" title="МБОУ ООШ пос.Калининский"><img src="./../src/rost1.png" alt=""></span>
+                <span class="GS marker" title="МБОУ СОШ с.Веселое"><img src="./../src/rost1.png" alt=""></span>
+                <span class="GS marker" title="МБОУ СОШ №5 г.Моздок"><img src="./../src/rost1.png" alt=""></span>
+                <span class="GS marker" title="МБОУ СОШ №8 г.Моздок"><img src="./../src/rost1.png" alt=""></span>
+                <span class="GS marker" title="МБОУ СОШ №108 г.Моздок"><img src="./../src/rost1.png" alt=""></span>
+                <span class="GS marker" title="МБОУ СОШ №2 г.Моздок"><img src="./../src/rost1.png" alt=""></span>
+                <span class="GS marker" title="МБОУ СОШ пос.Притеречный"><img src="./../src/rost1.png" alt=""></span>
+            </div>
+
+            <div class="schools">
+                <span class="S S21 A21 marker" title="Строительство школы на 500 мест с.Кизляр"><img src="./../src/sch0.png" alt=""></span>
+                <!-- <span class="S marker" title="Строительство школы-интерната на 500 мест г.Моздок"><img src="./../src/sch0.png" alt=""></span> -->
+                <span class="S S22 marker A22" title="Строительство школы на 200 мест ст.Черноярская"><img src="./../src/sch0.png" alt=""></span>
+            </div>
+
+
+            <div class="detsads">
+                <span class="DS DS21 marker A21" title="Строительство детского сада на 120 мест с.Кизляр"><img src="../src/ds0.png" alt=""></span>
+            </div>
+
+
+            <div class="repair">
+                <span class="SR SR22 marker A22" title="МБОУ ООШ п.Тельмана"><img src="./../src/schrem0.png" alt=""></span>
+                <span class="SR SR23 marker A23" title="МБОУ СОШ №7 г.Моздок"><img src="./../src/schrem0.png" alt=""></span>
+                <span class="SR SR23 marker A23" title="МБОУ СОШ с.Предгорное"><img src="../src/schrem0.png" alt=""></span>
+                <span class="SR SR22 SR23 marker A23 A22" title="МБОУ СОШ ст.Павлодольской"><img src="../src/schrem0.png" alt=""></span>
+                <span class="SR SR23 marker A23" title="МБОУ СОШ №108 г.Моздок"><img src="./../src/schrem0.png" alt=""></span>
+                <span class="SR SR23 marker A23" title="МБОУ СОШ №8 г.Моздок"><img src="./../src/schrem0.png" alt=""></span>
+                <span class="SR SR23 marker A23" title="МБОУ СОШ с.Веселое"><img src="./../src/schrem0.png" alt=""></span>
+                <span class="SR SR23 marker A23" title="МБОУ СОШ ст.Терской"><img src="./../src/schrem0.png" alt=""></span>
+                
+            </div>
+            <div><span class="ACmark">Моздокский район</span></div>
+            
+            <div><span class="circle"></span></div>
+            <div class="acg"><span>г.Моздок</span></div>
+            
+            
+            </div>
+        </div>
+    </div>
+
+        
+
+    <span class="theme"><a href="./pages/night.html" class="ntheme">Night</a></span>
+    <script src="../js/main.js"></script>
+</body>
+</html>
+
+

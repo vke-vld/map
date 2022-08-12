@@ -1,0 +1,407 @@
+main {
+  position: relative;
+  top: 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main-wrapper {
+  display: flex;
+  position: relative;
+  justify-content: end;
+  align-items: center;
+}
+
+.marker {
+  position: absolute;
+}
+
+.markers img {
+  width: 40px;
+  cursor: help;
+  filter: drop-shadow(2px 2px 1px #765113);
+}
+
+.markers img:hover {
+  filter: drop-shadow(2px 2px 1px #ffffff);
+  transform: scale(1.3);
+}
+
+.ACmark > a {
+  text-decoration: none;
+  color: black;
+  font-size: 9pt;
+}
+.GS img{
+  height: 20px;
+  width: 20px;
+}
+body {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1ebde;
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 45px;
+  background-color: #e6d7bb;
+  border-style: hidden;
+  margin: 10px;
+  /* margin-bottom: 40px; */
+  cursor: pointer;
+  border-radius: 20px;
+  font-style: bold;
+  font-size: 20pt;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.filters {
+  position: relative;
+  height: auto;
+  top: 150px;
+
+}
+
+.filter-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: #e6d7bb;
+  border-style: hidden;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 20pt;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.yf {
+  display: flex;
+  flex-direction: row;
+}
+.yt {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 30px;
+}
+
+.yt span {
+  font-size: 15pt;
+  position: relative;
+  left: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.yearfilter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 50px;
+  background-color: #e6d7bb;
+  border-style: hidden;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 20pt;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+li {
+  list-style-type: none;
+  font-size: 15pt;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+li img {
+  width: 35px;
+}
+
+.main-map img {
+  width: 450px;
+  margin: 30px;
+  padding: 10px;
+  align-self: center;
+}
+
+.main-map {
+  margin: 30px;
+  padding: 10px;
+  align-self: center;
+}
+
+.hide {
+  display: none;
+}
+
+.ntheme {
+  text-decoration: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 15pt;
+  color: black;
+}
+.filters li {
+  position: relative;
+}
+.filter-button__listik {
+  display: none;
+  position: absolute;
+  top: 10px;
+  z-index: 2;
+  left: 100px;
+}
+.filter-button--active ~ .filter-button__listik {
+  display: block;
+}
+.filter-button__listik li {
+  margin-right: 10px;
+  padding: 0;
+}
+.filter-button__listik li:last-child {
+  margin: 0;
+}
+.filter-button__listik button {
+  width: 70px;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  background: #e6d7bb;
+  cursor: pointer;
+}
+.filter-button__listik ul {
+  display: flex;
+  padding: 0;
+}
+
+.theme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #f3c372 solid;
+  height: 40px;
+  width: 100px;
+  border-radius: 15px;
+  background-color: #f3c372;
+  opacity: 0%;
+}
+
+.circle {
+  background: #0099ff;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  cursor: help;
+  filter: drop-shadow(0.3px 1px 0.4px #765113);
+  top: 335px;
+  left: 365px;
+  position: absolute;
+}
+
+.ACmark {
+  position: absolute;
+  left: 114px;
+  top: -90px;
+  cursor: default;
+  font-size: 50pt;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.ACmark > a {
+  text-decoration: none;
+  color: black;
+}
+
+.Q:nth-child(1) {
+  top: 217px;
+  left: 365px;
+}
+
+.Q:nth-child(2) {
+  left: 391px;
+  top: 325px;
+}
+
+.Q:nth-child(3) {
+  left: 398px;
+  top: 408px;
+}
+
+.Q:nth-child(4) {
+  left: 282px;
+  top: 457px;
+}
+
+.DS:nth-child(1) {
+  top: 107px;
+  left: 320px;
+}
+
+.DS:nth-child(2) {
+  top: 85px;
+  left: 310px;
+}
+
+.DS:nth-child(3) {
+  top: 258px;
+  left: 242px;
+}
+
+.DS:nth-child(4) {
+  top: 344px;
+  left: 257px;
+}
+
+.W:nth-child(1) {
+  top: 430px;
+  left: 438px;
+}
+
+.W:nth-child(2) {
+  top: 275px;
+  left: 284px;
+}
+
+.W:nth-child(3) {
+  top: 460px;
+  left: 400px;
+}
+
+.W:nth-child(4) {
+  top: 360px;
+  left: 379px;
+}
+
+.W:nth-child(5) {
+  top: 327px;
+  left: 308px;
+}
+
+.S:nth-child(1) {
+  top: 221px;
+  left: 268px;
+}
+
+.S:nth-child(2) {
+  top: 242px;
+  left: 297px;
+}
+.S:nth-child(3) {
+  top: 445px;
+  left: 481px;
+}
+
+.SR:nth-child(1) {
+  top: 1132px;
+  left: 177px;
+  display: none;
+}
+
+.SR:nth-child(2) {
+  top: 1132px;
+  left: 177px;
+}
+
+.SR:nth-child(3) {
+  top: 273px;
+  left: 342px;
+}
+
+.SR:nth-child(4) {
+  top: 246px;
+  left: 363px;
+}
+
+.SR:nth-child(5) {
+  top: 242px;
+  left: 297px;
+  display: none;
+}
+
+.SR:nth-child(6) {
+  top: 70px;
+  left: 300px;
+}
+
+.SR:nth-child(7) {
+  top: 448px;
+  left: 313px;
+}
+
+.SR:nth-child(8) {
+  top: 288px;
+  left: 317px;
+  display: none;
+}
+
+.SR:nth-child(9) {
+  top: 204px;
+  left: 395px;
+}
+
+.SR:nth-child(10) {
+  top: 295px;
+  left: 293px;
+}
+
+.SR:nth-child(11) {
+  top: 333px;
+  left: 309px;
+  display: none;
+}
+
+.SR:nth-child(12) {
+  top: 679px;
+  left: 614px;
+  display: none;
+}
+
+.SR:nth-child(13) {
+  top: 284px;
+  left: 318px;
+}
+
+.SR:nth-child(14) {
+  top: 297px;
+  left: 257px;
+}
+
+.SR:nth-child(15) {
+  top: 407px;
+  left: 490px;
+}
+
+.SR:nth-child(16) {
+  top: 410px;
+  left: 288px;
+}
+
+.SR:nth-child(17) {
+  top: 370px;
+  left: 322px;
+}
+
+.SR:nth-child(18) {
+  top: 318px;
+  left: 288px;
+}
+
+.SR:nth-child(19) {
+  top: 321px;
+  left: 257px;
+}

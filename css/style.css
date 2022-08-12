@@ -1,0 +1,198 @@
+body {
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.theme > a {
+  font-size: 60pt;
+}
+.theme {
+  position: relative;
+  margin: auto;
+  padding: 20px;
+  border: olive solid;
+  border-radius: 30px;
+  display: flex;
+}
+
+a {
+  font-size: 30pt;
+  text-decoration: none;
+}
+
+.main-wrapper {
+  position: relative;
+  display: flex;
+  border: olive solid;
+}
+
+.main map {
+  position: static;
+}
+
+.main-map > img {
+  justify-content: start;
+}
+
+.markers {
+  position: static;
+}
+
+.markers img {
+  position: static;
+  width: 100px;
+}
+
+.hide {
+  display: none;
+}
+
+.filter-button {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6c276;
+  border-style: hidden;
+  margin: 10px;
+  cursor: grabbing;
+  border-radius: 70px;
+  font-size: 40pt;
+  border: olive solid;
+}
+
+li {
+  list-style-type: none;
+  font-size: 40pt;
+}
+
+li img {
+  width: 100px;
+}
+
+.main-items span {
+  position: absolute;
+}
+
+.Q:nth-child(1) {
+  top: 1870px;
+  left: 2200px;
+}
+
+.Q:nth-child(2) {
+  top: 190px;
+  left: 260px;
+}
+
+.Q:nth-child(3) {
+  top: 400px;
+  left: 100px;
+}
+
+.S:nth-child(1) {
+  top: 200px;
+  left: 290px;
+}
+
+.S:nth-child(2) {
+  top: 350px;
+  left: 270px;
+}
+
+.S:nth-child(3) {
+  top: 400px;
+  left: 300px;
+}
+
+.SR:nth-child(1) {
+  top: 70px;
+  left: 400px;
+}
+
+.SR:nth-child(2) {
+  top: 310px;
+  left: 100px;
+}
+
+.W:nth-child(1) {
+  top: 490px;
+  left: 150px;
+}
+
+.W:nth-child(2) {
+  top: 320px;
+  left: 180px;
+}
+
+.W:nth-child(3) {
+  top: 290px;
+  left: 400px;
+}
+
+.W:nth-child(4) {
+  top: 200px;
+  left: 330px;
+}
+
+.GS:nth-child(1) {
+  top: 430px;
+  left: 210px;
+}
+
+.GS:nth-child(2) {
+  top: 350px;
+  left: 420px;
+}
+
+.AC:hover {
+  filter: opacity(50%);
+  transition: filter 0.4s ease-in-out;
+}
+
+.AC:nth-child(1) {
+  top: 314px;
+  left: 246px;
+}
+
+.AC:nth-child(9) {
+  top: 318px;
+  left: 388px;
+}
+
+.AC:nth-child(8) {
+  top: 308px;
+  left: 402px;
+}
+
+.AC:nth-child(4) {
+  top: 233px;
+  left: 149px;
+}
+
+.AC:nth-child(5) {
+  top: 186px;
+  left: 230px;
+}
+
+.AC:nth-child(6) {
+  top: 23px;
+  left: 368px;
+}
+
+.AC:nth-child(7) {
+  top: 250px;
+  left: 347px;
+}
+
+.AC:nth-child(2) {
+  top: 245px;
+  left: 265px;
+}
+
+.AC:nth-child(3) {
+  top: 260px;
+  left: 219px;
+}

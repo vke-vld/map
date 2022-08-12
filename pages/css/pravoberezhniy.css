@@ -1,0 +1,371 @@
+.main-wrapper {
+  display: flex;
+  position: relative;
+  justify-content: end;
+  align-items: center;
+  top: 100px;
+}
+
+.marker {
+  position: absolute;
+}
+
+.markers img:hover {
+  filter: drop-shadow(2px 2px 1px #ffffff);
+  transform: scale(1.3);
+}
+
+.markers img {
+  width: 30px;
+  cursor: help;
+  filter: drop-shadow(2px 2px 1px #765113);
+}
+
+.ACmark > a {
+  text-decoration: none;
+  color: black;
+  font-size: 9pt;
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1ebde;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 45px;
+  background-color: #efe2cb;
+  border-style: hidden;
+  margin: 10px;
+  /* margin-bottom: 40px; */
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 20pt;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.acg {
+  position: absolute;
+  top: 415px;
+  left: 220px;
+  font-size: 15pt;
+}
+
+.filters {
+  align-self: center;
+  height: auto;
+  position: relative;
+  top: 180px;
+}
+
+.filter-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: #efe2cb;
+  border-style: hidden;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 20pt;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.yf {
+  display: flex;
+  flex-direction: row;
+}
+.yt {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 30px;
+}
+
+.yt span {
+  font-size: 15pt;
+  position: relative;
+  left: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.yearfilter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 50px;
+  background-color: #efe2cb;
+  border-style: hidden;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 20pt;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+li {
+  list-style-type: none;
+  font-size: 15pt;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+li img {
+  width: 35px;
+}
+
+.main-map > img {
+  width: 450px;
+  margin: 57px 50px 50px 32px;
+  padding: 10px;
+  align-self: center;
+}
+
+.main-map {
+  margin: 30px;
+  padding: 10px;
+  align-self: center;
+}
+
+.hide {
+  display: none;
+}
+
+.ntheme {
+  text-decoration: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 15pt;
+  color: black;
+}
+.filters li {
+  position: relative;
+}
+.filter-button__listik {
+  display: none;
+  position: absolute;
+  top: 10px;
+  z-index: 2;
+  left: 100px;
+}
+.filter-button--active ~ .filter-button__listik {
+  display: block;
+}
+.filter-button__listik li {
+  margin-right: 10px;
+  padding: 0;
+}
+.filter-button__listik li:last-child {
+  margin: 0;
+}
+.filter-button__listik button {
+  width: 70px;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  background: #efe2cb;
+  cursor: pointer;
+}
+.filter-button__listik ul {
+  display: flex;
+  padding: 0;
+}
+
+.theme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #f3c372 solid;
+  height: 40px;
+  width: 100px;
+  border-radius: 15px;
+  background-color: #f3c372;
+  opacity: 0%;
+}
+
+.circle {
+  position: absolute;
+  left: 302px;
+  top: 433px;
+  background: #181818;
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  cursor: help;
+  filter: drop-shadow(0.3px 1px 0.4px #765113);
+}
+
+.ACmark {
+  position: absolute;
+  left: 105px;
+  top: -100px;
+  font-size: 35pt;
+  cursor: default;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.GS img{
+  height: 20px;
+  width: 20px;
+}
+
+.GS:nth-child(1) {
+  /* Zamankul */
+  top: 195px;
+  left: 170px;
+}
+
+.GS:nth-child(2) {
+  /* Tsalыk */
+  top: 218px;
+  left: 270px;
+}
+
+.GS:nth-child(3) {
+  /* Zilgi */
+  top: 318px;
+  left: 309px;
+}
+
+.GS:nth-child(4) {
+  /* Hero */
+  top: 374px;
+  left: 345px;
+}
+
+.GS:nth-child(5) {
+  /* Beslan 4 */
+  top: 391px;
+  left: 303px;
+}
+
+.GS:nth-child(6) {
+  /* Beslan 2 */
+  top: 383px;
+  left: 255px;
+}
+
+.GS:nth-child(7) {
+  /* Pharn */
+  top: 473px;
+  left: 288px;
+}
+
+.GS:nth-child(8) {
+  /* Beslan 6 */
+  top: 424px;
+  left: 320px;
+}
+
+.GS:nth-child(9) {
+  /* Beslan 8*/
+  top: 436px;
+  left: 348px;
+}
+
+.GS:nth-child(10) {
+  /* Beslan 1*/
+  top: 451px;
+  left: 317px;
+}
+
+.GS:nth-child(11) {
+  /* Beslan 5*/
+  top: 441px;
+  left: 393px;
+}
+
+.S:nth-child(1) {
+  /* Beslan S50 */
+    top: 432px;
+    left: 272px;
+}
+
+.S:nth-child(2) {
+  /* Beslan DT */
+    top: 443px;
+    left: 292px;
+}
+
+.SR:nth-child(1) {
+  /* Zamankul*/
+  top: 220px;
+  left: 170px;
+}
+
+.SR:nth-child(2) {
+  /* Zilgi*/
+  top: 338px;
+  left: 309px;
+}
+
+.SR:nth-child(3) {
+  /* Batako*/
+  top: 343px;
+  left: 247px;
+}
+
+.SR:nth-child(4) {
+  /* Hero */
+  top: 394px;
+  left: 345px;
+}
+
+.SR:nth-child(5) {
+  /* Beslan 4 */
+  top: 374px;
+  left: 313px;
+}
+
+.SR:nth-child(6) {
+  /* Pharn */
+    top: 474px;
+    left: 266px;
+}
+
+.SR:nth-child(7) {
+  /* Beslan 8 */
+  top: 422px;
+  left: 368px;
+}
+
+.SR:nth-child(8) {
+  /* Beslan Internat */
+  top: 491px;
+  left: 333px;
+}
+
+.SR:nth-child(9) {
+  /* Beslan 5*/
+  top: 451px;
+  left: 383px;
+}
+
+.SR:nth-child(10) {
+  /* Olginskoye*/
+  top: 456px;
+  left: 483px;
+}
+
+.DS:nth-child(1) {
+  /* Revolutsii */
+    top: 432px;
+    left: 231px;
+}

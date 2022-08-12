@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/pravoberezhniy.css">
+    <title>Map</title>
+    <link rel="stylesheet" type="text/css" href="./tooltipster-master/dist/css/tooltipster.bundle.min.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script type="text/javascript" src="./tooltipster-master/dist/js/tooltipster.bundle.min.js"></script>
+</head>
+<body>
+        <div class="filters">
+            <ul>
+
+                    
+                <li>
+                    <form>
+                    <input type="button" value="<" onClick='location.href="../index.html"' class="back">
+                    </form>
+                    Вернуться на главную
+                </li>
+
+
+                <li><button class="filter-button _filter-button" data-filter="All" onclick="hideSubFilter()">Все</button>Все объекты</li>
+                
+                <!-- <li>
+                    <button
+                        class="filter-button _filter-button"
+                        data-filter="DS"
+                        onclick="showSubFilter(this)"
+                    >
+                        <img src="../src/ds0.png" alt="">
+                    </button>
+                    <div class="filter-button__listik">
+                        <ul>
+                            <li><button class="_filter-button" data-filter="DS20">2020г.</button></li>
+                            <li><button class="_filter-button" data-filter="DS21">2021г.</button></li>
+                            <li><button class="_filter-button" data-filter="DS22">2022г.</button></li>
+                            <li><button class="_filter-button" data-filter="DS23">2023г.</button></li>
+                        </ul>
+                    </div>
+                    <span class="filter-button__title">Строительство новых детских садов</span>
+                </li> -->
+                
+                <li><button class="filter-button _filter-button" data-filter="GS"><img src="../src/rost1.png" alt=""></button>Точки роста</li>
+                <li><button class="filter-button _filter-button" data-filter="DS"><img src="../src/ds0.png" alt=""></button>Строительство новых детских садов</li>
+                <li>
+                    <button
+                        class="filter-button _filter-button"
+                        data-filter="S"
+                        onclick="showSubFilter(this)"
+                    >
+                        <img src="../src/sch0.png" alt="">
+                    </button>
+                    <div class="filter-button__listik">
+                        <ul>
+                            <!-- <li><button class="_filter-button" data-filter="S21">2021г.</button></li> -->
+<!--                             <li><button class="_filter-button" data-filter="S22">2022г.</button></li> -->
+                            <li><button class="_filter-button" data-filter="S23">2023г.</button></li>
+                        </ul>
+                    </div>
+                    <span class="filter-button__title">Строительство новых школ</span>
+                </li>
+
+                <li>
+                    <button
+                        class="filter-button _filter-button"
+                        data-filter="SR"
+                        onclick="showSubFilter(this)"
+                    >
+                        <img src="../src/schrem0.png" alt="">
+                    </button>
+                    <div class="filter-button__listik">
+                        <ul>
+                            <li><button class="_filter-button" data-filter="SR22">2022г.</button></li>
+                            <li><button class="_filter-button" data-filter="SR23">2023г.</button></li>
+                        </ul>
+                    </div>
+                    <span class="filter-button__title">Ремонт школ</span>
+                </li>
+                
+            </ul>
+
+        <div class="yt">
+            <ul class="yf">
+                <li><button class="yearfilter _filter-button" data-filter="A22">2022</button></li>
+                <li><button class="yearfilter _filter-button" data-filter="A23">2023</button></li>
+            </ul>
+            <span>Фильтрация по годам</span>
+        </div>
+
+        </div>
+
+        <div class="main-wrapper">
+
+           
+            <div class="main-map">
+                <img src="./src/pravoberezhniy.png"></img>
+            </div>
+
+            <div class="markers">
+                                
+                
+                
+                <div class="growschool">
+                    <span class="GS marker" title="МБОУ СОШ с.Заманкул"><img src="../src/rost1.png" alt=""></span> <!-- Zamankul -->
+                    <span class="GS marker" title="МБОУ СОШ с.Цалык"><img src="../src/rost1.png" alt=""></span> <!-- Tsalыk -->
+                    <span class="GS marker" title="МБОУ СОШ с.Зильги"><img src="../src/rost1.png" alt=""></span> <!-- Zilgi-->
+                    <span class="GS marker" title="МБОУ СОШ №7"><img src="../src/rost1.png" alt=""></span> <!-- Hero -->
+                    <span class="GS marker" title="МБОУ СОШ №4 г.Беслан"><img src="../src/rost1.png" alt=""></span> <!-- Beslan 4-->
+                    <span class="GS marker" title="МБОУ СОШ №2 г.Беслан"><img src="../src/rost1.png" alt=""></span> <!-- Beslan 2-->
+                    <span class="GS marker" title="МБОУ СОШ с.Фарн"><img src="../src/rost1.png" alt=""></span> <!-- Pharn-->
+                    <span class="GS marker" title="МКОУ СОШ №6 г.Беслан"><img src="../src/rost1.png" alt=""></span> <!-- Beslan 6-->
+                    <span class="GS marker" title="ГБОУ СОШ №8 г.Беслан"><img src="../src/rost1.png" alt=""></span> <!-- Beslan 8-->
+                    <span class="GS marker" title="МБОУ СОШ №1 г.Беслан"><img src="../src/rost1.png" alt=""></span> <!-- Beslan 1 -->
+                    <span class="GS marker" title="МБОУ СОШ №5 г.Беслан"><img src="../src/rost1.png" alt=""></span> <!-- Beslan 5 -->
+                    
+                </div>
+                
+                <div class="schools">
+                    <span class="S marker S23 A23" title="Строительство школы на 550 мест г.Беслан"><img src="../src/sch0.png" alt=""></span> <!-- Beslan S -->
+                    <span class="S marker S23 A23" title="Реконструкция дома детского творчества в г.Беслан"><img src="../src/sch0.png" alt=""></span> <!-- Beslan DT -->
+                </div>
+                
+                <div class="repair">
+                    <span class="SR marker SR23 A23" title="МБОУ СОШ с.Заманкул"><img src="../src/schrem0.png" alt=""></span> <!-- Zamankul -->
+                    <span class="SR marker SR22 A22" title="МБОУ СОШ с.Зильги"><img src="../src/schrem0.png" alt=""></span> <!-- Zilgi -->
+                    <span class="SR marker SR23 A23" title="МБОУ СОШ с.Новый Батако"><img src="../src/schrem0.png" alt=""></span> <!-- Batako -->
+                    <span class="SR marker SR23 A23" title="МБОУ СОШ №7"><img src="../src/schrem0.png" alt=""></span> <!-- Hero-->
+                    <span class="SR marker SR23 A23" title="МБОУ СОШ №4 г.Беслан"><img src="../src/schrem0.png" alt=""></span> <!-- beslan 4 -->
+                    <span class="SR marker SR23 A23" title="МБОУ СОШ с.Фарн"><img src="../src/schrem0.png" alt=""></span> <!-- Pharn-->
+                    <span class="SR marker SR23 A23" title="ГБОУ СОШ № 8 г.Беслан"><img src="../src/schrem0.png" alt=""></span> <!-- Beslan 8-->
+                    <span class="SR marker SR23 A23" title="МБОУ Школа-интернат г.Беслан"><img src="../src/schrem0.png" alt=""></span> <!-- Beslan Internat -->
+                    <span class="SR marker SR23 A23" title="МБОУ СОШ № 5 г.Беслан"><img src="../src/schrem0.png" alt=""></span> <!-- Beslan 5 -->
+                    <span class="SR marker SR22 A22" title="МБОУ СОШ с.Ольгинское"><img src="../src/schrem0.png" alt=""></span> <!-- Olginskoye -->
+                    
+                    <div class="detsads">
+                        <span class="DS marker DS20" title="Строительство детского сада на 230 мест в г.Беслан 2020г"><img src="../src/ds0.png" alt=""></span>
+                    
+                    </div>
+                    
+                    <div><span class="ACmark">Правобережный район</span></div>
+            
+                </div>
+                
+                <div><span class="circle"></span></div>
+                <div class="acg"><span>г.Беслан</span></div>
+                
+                </div>
+            </div>
+        </div>
+        <span class="theme"><a href="./pages/night.html" class="ntheme">Night</a></span>
+    <script src="../js/main.js"></script>
+</body>
+</html>

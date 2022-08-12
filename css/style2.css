@@ -1,0 +1,511 @@
+.main-wrapper {
+  display: flex;
+  position: relative;
+  justify-content: end;
+  align-items: center;
+}
+
+.allmark {
+  position: absolute;
+  left: 105px;
+  top: 15px;
+  font-size: 35pt;
+  cursor: default;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.marker {
+  position: absolute;
+}
+
+.markers img:hover {
+  filter: drop-shadow(2px 2px 1px #ffffff);
+  transform: scale(1.7);
+}
+
+.markers img {
+  width: 28px;
+  cursor: help;
+  filter: drop-shadow(2px 2px 1px #765113);
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1ebde;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.filters {
+  align-self: center;
+  height: auto;
+}
+.GS img {
+  height: 20px;
+  width: 20px;
+}
+.filter-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: #ebd3ab;
+  border-style: hidden;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 20pt;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+li {
+  list-style-type: none;
+  font-size: 15pt;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+li img {
+  width: 35px;
+}
+
+.main-map > img {
+  width: 920px;
+  margin: 30px;
+  padding: 10px;
+  align-self: center;
+}
+
+.main-map {
+  margin: 30px;
+  padding: 10px;
+  align-self: center;
+}
+
+.hide {
+  display: none;
+}
+
+.ntheme {
+  text-decoration: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 15pt;
+  color: black;
+}
+.filters li {
+  position: relative;
+}
+.filter-button__listik {
+  display: none;
+  position: absolute;
+  top: 10px;
+  z-index: 2;
+  left: 100px;
+}
+.filter-button--active ~ .filter-button__listik {
+  display: block;
+}
+.filter-button__listik li {
+  margin-right: 10px;
+  padding: 0;
+}
+.filter-button__listik li:last-child {
+  margin: 0;
+}
+.filter-button__listik button {
+  width: 70px;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  background: #ebd3ab;
+  cursor: pointer;
+}
+.filter-button__listik ul {
+  display: flex;
+  padding: 0;
+}
+
+.theme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #f3c372 solid;
+  height: 40px;
+  width: 100px;
+  border-radius: 15px;
+  background-color: #f3c372;
+  opacity: 0%;
+}
+
+.circle {
+  background: #1f1f1f;
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  cursor: help;
+  filter: drop-shadow(0.3px 1px 0.4px #765113);
+  position: absolute;
+}
+
+.circle:nth-child(1) {
+  /* моздокский */
+  left: 850px;
+  top: 145px;
+}
+.circle:nth-child(2) {
+  /* кировский */
+  left: 560px;
+  top: 460px;
+}
+.circle:nth-child(3) {
+  /* правобережный */
+  left: 710px;
+  top: 560px;
+}
+.circle:nth-child(4) {
+  /* ирафский */
+  left: 360px;
+  top: 590px;
+}
+.circle:nth-child(5) {
+  /* дигорский */
+  left: 511px;
+  top: 565px;
+}
+.circle:nth-child(6) {
+  /* ардонский */
+  left: 600px;
+  top: 620px;
+}
+.circle:nth-child(7) {
+  /*алагирский */
+  left: 539px;
+  top: 678px;
+}
+.circle:nth-child(8) {
+  /* пригородный */
+  left: 873px;
+  top: 737px;
+}
+.circle:nth-child(9) {
+  /* владикавказ */
+  left: 829px;
+  top: 692px;
+  display: none;
+}
+
+.GS:nth-child(1) {
+  /* моздокский */
+  left: 820px;
+  top: 180px;
+}
+.GS:nth-child(2) {
+  /* кировский */
+  left: 520px;
+  top: 480px;
+}
+.GS:nth-child(3) {
+  /* правобережный */
+  left: 650px;
+  top: 460px;
+}
+.GS:nth-child(4) {
+  /* ирафский */
+  left: 220px;
+  top: 790px;
+}
+.GS:nth-child(5) {
+  /* дигорский */
+  left: 420px;
+  top: 710px;
+}
+.GS:nth-child(6) {
+  /* ардонский */
+  left: 635px;
+  top: 662px;
+}
+.GS:nth-child(7) {
+  /*алагирский */
+  left: 520px;
+  top: 690px;
+}
+.GS:nth-child(8) {
+  /* пригородный */
+  left: 920px;
+  top: 710px;
+}
+.GS:nth-child(9) {
+  /* владикавказ */
+  left: 820px;
+  top: 700px;
+}
+
+.Q:nth-child(1) {
+  /* моздокский */
+  left: 750px;
+  top: 150px;
+}
+
+.Q:nth-child(2) {
+  /* владикавказ */
+  left: 800px;
+  top: 780px;
+}
+
+.DS:nth-child(1) {
+  /* моздокский */
+  left: 720px;
+  top: 180px;
+}
+
+.DS:nth-child(2) {
+  /* правобережный */
+  left: 690px;
+  top: 490px;
+}
+
+.DS:nth-child(3) {
+  /* владикавказ */
+  left: 820px;
+  top: 750px;
+}
+
+.DS:nth-child(4) {
+  /* пригородный */
+  left: 920px;
+  top: 760px;
+}
+
+.DS:nth-child(5) {
+  /* дигорский */
+  left: 470px;
+  top: 580px;
+}
+
+.W:nth-child(1) {
+  /* владикавказ */
+  left: 780px;
+  top: 850px;
+}
+
+.W:nth-child(2) {
+  /* кировский */
+  left: 480px;
+  top: 450px;
+}
+
+.W:nth-child(3) {
+  /* ардонский */
+  left: 658px;
+  top: 642px;
+}
+
+.SR:nth-child(1) {
+  /* моздокский */
+  left: 760px;
+  top: 230px;
+}
+.SR:nth-child(2) {
+  /* кировский */
+  left: 580px;
+  top: 480px;
+}
+.SR:nth-child(3) {
+  /* правобережный */
+  left: 720px;
+  top: 540px;
+}
+.SR:nth-child(4) {
+  /* ирафский */
+  left: 250px;
+  top: 690px;
+}
+.SR:nth-child(5) {
+  /* дигорский */
+  left: 450px;
+  top: 630px;
+}
+.SR:nth-child(6) {
+  /* ардонский */
+  left: 610px;
+  top: 550px;
+}
+.SR:nth-child(7) {
+  /*алагирский */
+  left: 550px;
+  top: 790px;
+}
+.SR:nth-child(8) {
+  /* пригородный */
+  left: 710px;
+  top: 790px;
+}
+.SR:nth-child(9) {
+  /* владикавказ */
+  left: 820px;
+  top: 720px;
+}
+
+.S:nth-child(1) {
+  /* моздокский */
+  left: 660px;
+  top: 130px;
+}
+.S:nth-child(2) {
+  /* кировский */
+  left: 620px;
+  top: 490px;
+}
+.S:nth-child(3) {
+  /* правобережный */
+  left: 766px;
+  top: 575px;
+}
+.S:nth-child(4) {
+  /* ардонский */
+  left: 650px;
+  top: 570px;
+}
+.S:nth-child(5) {
+  /*алагирский */
+  left: 450px;
+  top: 850px;
+}
+.S:nth-child(6) {
+  /* пригородный */
+  left: 700px;
+  top: 890px;
+}
+.S:nth-child(7) {
+  /* владикавказ */
+  left: 780px;
+  top: 920px;
+}
+
+.ACmark {
+  position: absolute;
+}
+
+.ACmark > a {
+  text-decoration: none;
+  color: black;
+  font-size: 15pt;
+}
+
+.ACmark:nth-child(1) {
+  /* моздокский */
+  left: 865px;
+  top: 145px;
+}
+.ACmark:nth-child(2) {
+  /* кировский */
+  left: 560px;
+  top: 435px;
+}
+.ACmark:nth-child(3) {
+  /* правобережный */
+  left: 710px;
+  top: 570px;
+}
+.ACmark:nth-child(4) {
+  /* ирафский */
+  left: 375px;
+  top: 590px;
+}
+.ACmark:nth-child(5) {
+  /* дигорский */
+  left: 500px;
+  top: 545px;
+}
+.ACmark:nth-child(6) {
+  /* ардонский */
+  left: 610px;
+  top: 620px;
+}
+.ACmark:nth-child(7) {
+  /*алагирский */
+  left: 549px;
+  top: 678px;
+}
+.ACmark:nth-child(8) {
+  /* пригородный */
+  left: 883px;
+  top: 737px;
+}
+.ACmark:nth-child(9) {
+  /* владикавказ */
+  left: 829px;
+  top: 692px;
+  display: none;
+}
+
+.district:hover {
+  transition: filter 0.1s;
+  transform: scale(1.4);
+}
+
+a[title]:hover {
+  color: #2e3977;
+}
+
+.district > a {
+  text-decoration: none;
+  color: black;
+  font-size: 12pt;
+}
+
+.district {
+  position: absolute;
+}
+
+.district:nth-child(1) {
+  /* моздокский */
+  left: 750px;
+  top: 100px;
+}
+.district:nth-child(2) {
+  /* кировский */
+  left: 519px;
+  top: 403px;
+}
+.district:nth-child(3) {
+  /* правобережный */
+  left: 690px;
+  top: 460px;
+}
+.district:nth-child(4) {
+  /* ирафский */
+  left: 270px;
+  top: 790px;
+}
+.district:nth-child(5) {
+  /* дигорский */
+  left: 399px;
+  top: 668px;
+}
+.district:nth-child(6) {
+  /* ардонский */
+  left: 580px;
+  top: 590px;
+}
+.district:nth-child(7) {
+  /*алагирский */
+  left: 470px;
+  top: 880px;
+}
+.district:nth-child(8) {
+  /* пригородный */
+  left: 790px;
+  top: 640px;
+}
+.district:nth-child(9) {
+  /* владикавказ */
+  left: 810px;
+  top: 700px;
+}

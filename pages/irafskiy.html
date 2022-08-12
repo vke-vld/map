@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/irafskiy.css">
+    <title>Map</title>
+    <link rel="stylesheet" type="text/css" href="./tooltipster-master/dist/css/tooltipster.bundle.min.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script type="text/javascript" src="./tooltipster-master/dist/js/tooltipster.bundle.min.js"></script>
+</head>
+<body>
+        <div class="filters">
+            <ul>
+                    
+                <li>
+                    <form>
+                    <input type="button" value="<" onClick='location.href="../index.html"' class="back">
+                    </form>
+                    Вернуться на главную
+                </li>
+
+
+                <li><button class="filter-button _filter-button" data-filter="All" onclick="hideSubFilter()">Все</button>Все объекты</li>
+
+                <li><button class="filter-button _filter-button" data-filter="GS"><img src="../src/rost1.png" alt=""></button>Точки роста</li>
+                <li>
+                    <button
+                        class="filter-button _filter-button"
+                        data-filter="SR"
+                        onclick="showSubFilter(this)"
+                    >
+                        <img src="../src/schrem0.png" alt="">
+                    </button>
+                    <div class="filter-button__listik">
+                        <ul>
+                            <!-- <li><button class="_filter-button" data-filter="SR21">2021г.</button></li> -->
+                            <li><button class="_filter-button" data-filter="SR22">2022г.</button></li>
+                            <!-- <li><button class="_filter-button" data-filter="SR23">2023г.</button></li> -->
+                        </ul>
+                    </div>
+                    <span class="filter-button__title">Ремонт школ</span>
+                </li>
+
+            </ul>
+
+            <div class="yt">
+                <ul class="yf">
+                    <li><button class="yearfilter _filter-button" data-filter="A22">2022</button></li>
+                    <!-- <li><button class="yearfilter _filter-button" data-filter="A23">2023</button></li> -->
+                </ul>
+                <span>Фильтрация по годам</span>
+            </div>
+
+        </div>
+
+        <div class="main-wrapper">
+
+           
+            <div class="main-map">
+                <img src="./src/irafskiy.png"></img>
+            </div>
+
+            <div class="markers">
+                
+                <!--                 
+                    <div class="workshops"> </div>
+                    <div class="quants"> </div>
+                    <div class="detsads"></div>
+                    <div class="schools">
+                        <span class="S marker" title="МБОУ СОШ с.Ахсарисар"><img src="./../src/sch0.png" alt=""></span>
+                    </div>
+                -->
+
+                <div class="repair">
+                    <span class="SR marker SR22 A22" title="МБОУ СОШ с.Ахсарисар"><img src="../src/schrem0.png" alt=""></span> <!-- chiba  -->
+                    <span class="SR marker SR22 A22" title="МКОУ СОШ с.Средний Урух"><img src="../src/schrem0.png" alt=""></span> <!-- chiba  -->
+                    <span class="SR marker SR22 A22" title="МКОУ СОШ с.Советское"><img src="../src/schrem0.png" alt=""></span> <!-- chiba  -->
+                    <span class="SR marker SR22 A22" title="МКОУ СОШ №3 с.Чикола"><img src="../src/schrem0.png" alt=""></span>
+                </div>
+
+                <div class="growschool">
+                    <span class="GS marker" title="МКОУ СОШ №2 с.Чикола"><img src="../src/rost1.png" alt=""></span>
+                    <span class="GS marker" title="МКОУ СОШ №3 с.Чикола"><img src="../src/rost1.png" alt=""></span>
+                    <span class="GS marker" title="МКОУ СОШ с.Сурх-Дигора"><img src="../src/rost1.png" alt=""></span>
+                </div>
+
+                <div><span class="ACmark">Ирафский район</span></div>
+            
+            </div>
+            
+            <div><span class="circle"></span></div>
+            <div class="acg"><span>с.Чикола</span></div>
+            
+            </div>
+        </div>
+    </div>
+        <!-- </div> -->
+        <span class="theme"><a href="../pages/night.html" class="ntheme">Night</a></span>
+    <script src="../js/main.js"></script>
+</body>
+</html>

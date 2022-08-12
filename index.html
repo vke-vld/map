@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style2.css">
+    <title>Map</title>
+    <link rel="stylesheet" type="text/css" href="pages/tooltipster-master/dist/css/tooltipster.bundle.min.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script type="text/javascript" src="pages/tooltipster-master/dist/js/tooltipster.bundle.min.js"></script>
+</head>
+<body>
+        <div class="filters">
+            <ul>
+                <li><button class="filter-button _filter-button" data-filter="All" onclick="hideSubFilter()">Все</button>Все объекты</li>
+                <li><button class="filter-button _filter-button" data-filter="W"><img src="./src/master1.png" alt=""></button>Мастерские</li>
+                <li><button class="filter-button _filter-button" data-filter="Q"><img src="./src/Q0.png" alt=""></button>Кванториумы</li>
+                <li><button class="filter-button _filter-button" data-filter="GS"><img src="./src/rost1.png" alt=""></button>Точки роста</li>
+                <li><button class="filter-button _filter-button" data-filter="DS" ><img src="./src/ds0.png" alt=""></button><span class="filter-button__title">Строительство новых детских садов</span></li>
+                <li><button class="filter-button _filter-button" data-filter="S"><img src="./src/sch0.png" alt=""></button><span class="filter-button__title">Строительство новых школ</span></li>
+                <li><button class="filter-button _filter-button" data-filter="SR"><img src="./src/schrem0.png" alt=""></button>Ремонт школ</li>
+                <!-- <li><button class="filter-button _filter-button" data-filter="AC"><img src="./src/ac0.png" alt=""></button>Административные районы</li> -->
+            </ul>
+        </div>
+
+        <div class="main-wrapper">
+
+            <div class="allmark"><span>Республика Северная Осетия - Алания</span></div>
+
+            <div class="main-map">
+                <img src="./src/map0.png"></img>
+            </div>
+
+            <div class="markers">
+                <div class="workshops">
+                    <span class="W marker" title="Мастерские"><img src="./src/master1.png" alt=""></span>
+                    <span class="W marker" title="Мастерские"><img src="./src/master1.png" alt=""></span>
+                    <span class="W marker" title="Мастерские"><img src="./src/master1.png" alt=""></span>
+                </div>
+
+                <div class="quants">
+                    <span class="Q marker" title="Кванториумы"><img src="./src/Q0.png" alt=""></span>
+                    <span class="Q marker" title="Кванториумы"><img src="./src/Q0.png" alt=""></span>
+                </div>
+
+                <div class="schools">
+                    <span class="S marker" title="Строительство новых школ"><img src="./src/sch0.png" alt=""></span>
+                    <span class="S marker" title="Строительство новых школ"><img src="./src/sch0.png" alt=""></span>
+                    <span class="S marker" title="Строительство новых школ"><img src="./src/sch0.png" alt=""></span>
+                    <span class="S marker" title="Строительство новых школ"><img src="./src/sch0.png" alt=""></span>
+                    <span class="S marker" title="Строительство новых школ"><img src="./src/sch0.png" alt=""></span>
+                    <span class="S marker" title="Строительство новых школ"><img src="./src/sch0.png" alt=""></span>
+                    <span class="S marker" title="Строительство новых школ"><img src="./src/sch0.png" alt=""></span>
+                </div>
+
+                <div class="growschool">
+                    <span class="GS marker" title="Точки роста"><img src="./src/rost1.png" alt=""></span>
+                    <span class="GS marker" title="Точки роста"><img src="./src/rost1.png" alt=""></span>
+                    <span class="GS marker" title="Точки роста"><img src="./src/rost1.png" alt=""></span>
+                    <span class="GS marker" title="Точки роста"><img src="./src/rost1.png" alt=""></span>
+                    <span class="GS marker" title="Точки роста"><img src="./src/rost1.png" alt=""></span>
+                    <span class="GS marker" title="Точки роста"><img src="./src/rost1.png" alt=""></span>
+                    <span class="GS marker" title="Точки роста"><img src="./src/rost1.png" alt=""></span>
+                    <span class="GS marker" title="Точки роста"><img src="./src/rost1.png" alt=""></span>
+                </div>
+
+                <div class="repair">
+                    <span class="SR marker" title="Ремонт школ"><img src="./src/schrem0.png" alt=""></span>
+                    <span class="SR marker" title="Ремонт школ"><img src="./src/schrem0.png" alt=""></span>
+                    <span class="SR marker" title="Ремонт школ"><img src="./src/schrem0.png" alt=""></span>
+                    <span class="SR marker" title="Ремонт школ"><img src="./src/schrem0.png" alt=""></span>
+                    <span class="SR marker" title="Ремонт школ"><img src="./src/schrem0.png" alt=""></span>
+                    <span class="SR marker" title="Ремонт школ"><img src="./src/schrem0.png" alt=""></span>
+                    <span class="SR marker" title="Ремонт школ"><img src="./src/schrem0.png" alt=""></span>
+                    <span class="SR marker" title="Ремонт школ"><img src="./src/schrem0.png" alt=""></span>
+                    <span class="SR marker" title="Ремонт школ"><img src="./src/schrem0.png" alt=""></span>
+                </div>
+                
+
+                <div class="detsads">
+                    <span class="DS marker" title="Строительство детских садов"><img src="./src/ds0.png" alt=""></span>
+                    <span class="DS marker" title="Строительство детских садов"><img src="./src/ds0.png" alt=""></span> 
+                    <span class="DS marker" title="Строительство детских садов"><img src="./src/ds0.png" alt=""></span>
+                    <span class="DS marker" title="Строительство детских садов"><img src="./src/ds0.png" alt=""></span>
+                    <span class="DS marker" title="Строительство детских садов"><img src="./src/ds0.png" alt=""></span>
+                </div>
+
+                <div class="admin_center">
+            
+                    <span class="district"><a href="./pages/mozdokskiy.html"> Моздокский район</a></span>
+                    <span class="district"><a href="./pages/kirovskiy.html"> Кировский район</a></span>
+                    <span class="district"><a href="./pages/pravoberezhniy.html"> Правобережный район</a></span>
+                    <span class="district"><a href="./pages/irafskiy.html"> Ирафский район</a></span>
+                    <span class="district"><a href="./pages/digorskiy.html"> Дигорский район</a></span>
+                    <span class="district"><a href="./pages/ardonskiy.html"> Ардонский район</a></span>
+                    <span class="district"><a href="./pages/alagirskiy.html"> Алагирский район</a></span>
+                    <span class="district"><a href="./pages/prigorodniy.html"> Пригородный район</a></span>
+                    <span class="district"><a href="./pages/vladikavkaz.html"> Владикавказ</a></span>
+                </div>
+
+                <div>
+                    <span class="circle" title="Административный центр - г.Моздок"></span>
+                    <span class="circle" title="Административный центр - с.Эльхотово"></span>
+                    <span class="circle" title="Административный центр - г.Беслан"></span>
+                    <span class="circle" title="Административный центр - с.Чикола"></span>
+                    <span class="circle" title="Административный центр - г.Дигора"></span>
+                    <span class="circle" title="Административный центр - г.Ардон"></span>
+                    <span class="circle" title="Административный центр - г.Алагир"></span>
+                    <span class="circle" title="Административный центр - с.Октябрьское"></span>
+                    <span class="circle" title="Административный центр - г.Владикавказ"></span>
+                    
+                </div>
+
+                <div class="admin_center">
+            
+                    <span class="ACmark">г.Моздок</span>
+                    <span class="ACmark">с.Эльхотово</span>
+                    <span class="ACmark">г.Беслан</span>
+                    <span class="ACmark">с.Чикола</span>
+                    <span class="ACmark">г.Дигора</span>
+                    <span class="ACmark">г. Ардон</span>
+                    <span class="ACmark">г.Алагир</span>
+                    <span class="ACmark">с.Октябрьское</span>
+                    <span class="ACmark">г.Владикавказ</span>
+                </div>
+                
+            </div>
+        </div>
+        <span class="theme"><a href="./pages/night.html" class="ntheme">Night</a></span>
+    <script src="./js/main.js"></script>
+</body>
+</html>

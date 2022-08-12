@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/vladikavkaz.css">
+    <title>Map</title>
+    <link rel="stylesheet" type="text/css" href="./tooltipster-master/dist/css/tooltipster.bundle.min.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script type="text/javascript" src="./tooltipster-master/dist/js/tooltipster.bundle.min.js"></script>
+</head>
+<body>
+    <main>
+    <div class="filters">
+            <ul>
+                <li>
+                    <form>
+                    <input type="button" value="<" onClick='location.href="../index.html"' class="back">
+                    </form>
+                    Вернуться на главную
+                </li>
+
+                <li><button class="filter-button _filter-button" data-filter="All" onclick="hideSubFilter()">Все</button> Все объекты</li>
+                
+                <li>
+                    <button
+                        class="filter-button _filter-button"
+                        data-filter="W"
+                        onclick="showSubFilter(this)"
+                    >
+                        <img src="../src/master1.png" alt="">
+                    </button>
+                    <div class="filter-button__listik">
+                        <ul>
+                            <!-- <li><button class+="_filter-button" data-filter="W20">2021г.</button></li> -->
+                            <!-- <li><button class="_filter-button" data-filter="W21">2022г.</button></li> -->
+                            <li><button class="_filter-button" data-filter="W22">2023г.</button></li>
+                        </ul>
+                    </div>
+                    <span class="filter-button__title">Мастерские</span>
+                </li>
+                <li><button class="filter-button _filter-button" data-filter="Q"><img src="../src/Q0.png" alt=""></button>Кванториумы</li>
+               
+                <li>
+                    <button
+                        class="filter-button _filter-button"
+                        data-filter="DS"
+                        onclick="showSubFilter(this)"
+                    >
+                        <img src="../src/ds0.png" alt="">
+                    </button>
+                    <div class="filter-button__listik">
+                        <ul>
+                            <!-- <li><button class="_filter-button" data-filter="DS21">2021г.</button></li> -->
+                            <li><button class="_filter-button" data-filter="DS22">2022г.</button></li>
+                            <li><button class="_filter-button" data-filter="DS23">2023г.</button></li>
+                        </ul>
+                    </div>
+                    <span class="filter-button__title">Строительство новых детских садов</span>
+                </li>
+                
+                <li>
+                    <button
+                        class="filter-button _filter-button"
+                        data-filter="S"
+                        onclick="showSubFilter(this)"
+                    >
+                        <img src="../src/sch0.png" alt="">
+                    </button>
+                    <div class="filter-button__listik">
+                        <ul>
+                            <li><button class="_filter-button" data-filter="S22">2022г.</button></li>
+                            <li><button class="_filter-button" data-filter="S23">2023г.</button></li>
+                        </ul>
+                    </div>
+                    <span class="filter-button__title">Строительство новых школ</span>
+                </li>
+
+                <li>
+                    <button
+                        class="filter-button _filter-button"
+                        data-filter="SR"
+                        onclick="showSubFilter(this)"
+                    >
+                        <img src="../src/schrem0.png" alt="">
+                    </button>
+                    <div class="filter-button__listik">
+                        <ul>
+                            <!-- <li><button class="_filter-button" data-filter="SR21">2021г.</button></li> -->
+                            <li><button class="_filter-button" data-filter="SR22">2022г.</button></li>
+                            <li><button class="_filter-button" data-filter="SR23">2023г.</button></li>
+                        </ul>
+                    </div>
+                    <span class="filter-button__title">Ремонт школ</span>
+                </li>
+            </ul>
+
+
+            <div class="yt">
+                <ul class="yf">
+                    <li><button class="yearfilter _filter-button" data-filter="A22">2022</button></li>
+                    <li><button class="yearfilter _filter-button" data-filter="A23">2023</button></li>
+                </ul>
+                <span>Фильтрация по годам</span>
+            </div>
+
+        </div>
+    
+        <div class="main-wrapper">
+
+           
+            <div class="main-map">
+                <img src="./src/vladikavkaz1.png"></img>
+            </div>
+
+            <div class="markers">
+                
+                
+                <div class="quants">
+                    <span class="Q marker" title="РФМЛИ"><img src="../src/Q0.png" alt=""></span>
+                    <span class="Q marker" title="МБОУ СОШ №27"><img src="../src/Q0.png" alt=""></span>
+                    <span class="Q marker" title="МБОУ СОШ№ 3"><img src="../src/Q0.png" alt=""></span>
+                    <span class="Q marker" title="МБОУ СОШ №44"><img src="../src/Q0.png" alt=""></span>
+                </div>
+                
+                <div class="detsads">
+                    <span class="DS DS21 marker A21" title="Строительство детского сада на 280 мест по ул. Краснодонская п.Заводской"><img src="../src/ds0.png" alt=""></span>
+                    <span class="DS marker DS22 A22" title="Строительство детского сада на 280 мест по ул. Кооперативная п.Заводской"><img src="../src/ds0.png" alt=""></span> <!-- 2 -->
+                    <span class="DS marker DS23 A23" title="Строительство детского сада на 280 мест по ул. Владикавказская 69"><img src="../src/ds0.png" alt=""></span> <!-- 3  -->
+                    <span class="DS marker DS23 A23" title="Строительство детского сада на 280 мест по ул. А.Кесаева"><img src="../src/ds0.png" alt=""></span> <!-- 3  -->
+                    
+                </div>
+                
+                <div class="schools">
+                    <span class="S marker S22 A22" title="Строительство школы на 1100 мест по ул.Владивостокская 136"><img src="../src/sch0.png" alt=""></span> <!-- chiba  -->
+                    <span class="S marker S23 A23" title="Строительство школы на 550 мест мкр.''Новый город''"><img src="../src/sch0.png" alt=""></span> <!-- NC  -->
+                    <span class="S marker S23 A23" title="Строительство школы на 550 мест по ул.Магкаева"><img src="../src/sch0.png" alt=""></span> <!-- Magkaeva  -->
+                    
+                </div>
+                
+                <div class="repair">
+                    <span class="SR marker SR23 A23" title=""><img src="../src/schrem0.png" alt=""></span> <!-- 4 -->
+                    <span class="SR marker SR22 A22" title="МБОУ СОШ с.Балта"><img src="../src/schrem0.png" alt=""></span> <!-- balta -->
+                    <span class="SR marker SR23 A23" title="Гимназия №4"><img src="../src/schrem0.png" alt=""></span> <!-- 4GYM  -->
+                    <span class="SR marker SR22 A22" title="РФМЛИ"><img src="../src/schrem0.png" alt=""></span> <!-- RFMLI  -->
+                    <span class="SR marker SR23 A23" title=""><img src="../src/schrem0.png" alt=""></span> <!-- 5.  -->
+                    <span class="SR marker SR23 A23" title="МБОУ СОШ №34"><img src="../src/schrem0.png" alt=""></span> <!-- 34  -->
+                    <span class="SR marker SR22 A22" title="МБОУ №14"><img src="../src/schrem0.png" alt=""></span> <!-- 14  -->
+                    <span class="SR marker SR23 A23" title=""><img src="../src/schrem0.png" alt=""></span> <!-- 15  -->
+                    <span class="SR marker SR23 A23" title="МБОУ СОШ №15"><img src="../src/schrem0.png" alt=""></span> <!-- 15  -->
+                    <span class="SR marker SR23 A23" title="МБОУ СОШ №38"><img src="../src/schrem0.png" alt=""></span> <!-- 38  -->
+                    <span class="SR marker SR23 A23" title=""><img src="../src/schrem0.png" alt=""></span> <!-- 12  -->
+                    <span class="SR marker SR23 A23" title=""><img src="../src/schrem0.png" alt=""></span> <!-- 26 -->
+                    <span class="SR marker SR22 A22" title="Гимназия № 16"><img src="../src/schrem0.png" alt=""></span> <!-- 16GYM  -->
+                    <span class="SR marker SR23 A23" title="МБОУ СОШ №41"><img src="../src/schrem0.png" alt=""></span> <!-- 41 -->
+                    <span class="SR marker SR23 A23" title="МБОУ СОШ №37"><img src="../src/schrem0.png" alt=""></span> <!-- 37  -->
+                    <span class="SR marker SR22 A22" title="МБОУ СОШ №24"><img src="../src/schrem0.png" alt=""></span> <!-- 24 -->
+                    <span class="SR marker SR23 A23" title="МБОУ СОШ №26"><img src="../src/schrem0.png" alt=""></span> <!-- 26  -->
+                    <span class="SR marker SR23 A23" title="МБОУ СОШ №39"><img src="../src/schrem0.png" alt=""></span> <!-- 39 -->
+                    <span class="SR marker SR23 A23" title="МБОУ СОШ №22"><img src="../src/schrem0.png" alt=""></span> <!-- 22 -->
+                </div>
+                
+                <div class="workshops">
+                    <span class="W marker W22 A22" title="ВКЭ&#013 &#013 •Веб дизайн и разработка &#013 •Сетевое и системное администрирование &#013 •Программные решения для бизнеса"><img src="../src/master1.png" alt=""></span></a>
+                    <span class="W marker W20 A20" title="ВТЭТ&#013 &#013 •Поварское дело&#013 •Кондитерское дело"><img src="../src/master1.png" alt=""></span> <!-- VTET  -->
+                    <span class="W marker W22 A22" title="СОМК&#013 &#013 •Лабораторный  медицинский анализ &#013 •Медицинский социальный уход"><img src="../src/master1.png" alt=""></span> <!-- MED -->
+                    <span class="W marker W22 A22" title="ВТЭТ&#013 &#013 •Предпринимательство &#013 •Ресторанный сервис &#013 •Бухгалтерский учет &#013 •Администрирование отеля &#013 •Туризм"><img src="../src/master1.png" alt=""></span> <!-- VTET  -->
+                    <span class="W marker W22 A22" title="СКСТ&#013 &#013 •Архитектура &#013 •Кирпичная кладка &#013 •Сухое строительство и штукатурные работы &#013 •Сити-фермерство &#013 •Эксплуатация с/х машин"><img src="../src/master1.png" alt=""></span> <!-- SKST  -->
+                </div>
+                               
+                    <div><span class="ACmark">Владикавказ</span></div>
+            <!-- <div><span class="circle" title="г.Владикавказ"></span></div>
+        </div> -->
+        
+    </div>
+</div>
+<span class="theme"><a href="./pages/night.html" class="ntheme">Night</a></span>
+</main>
+    <script src="../js/main.js"></script>
+</body>
+</html>
