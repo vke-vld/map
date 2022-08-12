@@ -42,10 +42,10 @@ function hideSubFilter()
 //   }
 // })
 $('span').tooltipster({
-  animation: 'fade',
-  delay: 200,
-  theme: 'tooltipster-punk',
-  trigger: 'click',
+   animation: 'fade',
+   delay: 200,
+   theme: 'tooltipster-punk',
+   trigger: 'click'
 });
 
 
