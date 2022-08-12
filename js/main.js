@@ -46,9 +46,9 @@ $('span').tooltipster({
   delay: 200,
   theme: 'tooltipster-punk',
   trigger: 'custom',
-    triggerOpen: {
+   triggerOpen: {
         mouseenter: true,
-        click: true
+        touchstart: true
     },
     triggerClose: {
       mouseleave: true,
@@ -57,27 +57,4 @@ $('span').tooltipster({
   }
 });
 
-// const imgs = document.querySelectorAll('span');
-// r:
-// imgs.forEach((item) => {
-//   item.addEventListener('click', () => {
-//     const div = document.createElement("DIV");
-//     div.classList.add('on');
-//     div.innerHTML = item.getAttribute("title");
-//     imgs.forEach((other)=>{
-//       console.log(other.firstChild.nodeName);
-//     //   if(other.lastChild.nodeName == "IMG") {
-//     //     item.append(div)
-//     //     goto(r);
-//     //     //other.lastChild.classList.add('off');
-//     //     // other.lastChild.style.display="none"
-//     //     //item.classList.add('on');
-//     // } else {
-//     //   alert('1')
-//     //   // other.lastChild.style.display="none"
-//     // }
-//   })
 
-    
-//   });
-// });
