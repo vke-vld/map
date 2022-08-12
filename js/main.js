@@ -46,11 +46,6 @@ $('span').tooltipster({
   delay: 200,
   theme: 'tooltipster-punk',
   trigger: 'click',
-    triggerClose: {
-      mouseleave: true,
-      originClick: true,
-      touchleave: true
-  }
 });
 
 
